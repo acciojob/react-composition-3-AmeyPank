@@ -5,11 +5,11 @@ const App = () => {
   return (
     <div className="app">
       <Tooltip text="This is a tooltip">
-        <button className="tooltip">Button 1</button>
+        <h2>Hover ove me</h2>
       </Tooltip>
 
       <Tooltip text="This is another tooltip">
-        <span className="tooltip">Span 1</span>
+        <p><span className="tooltip">Hover over me to see another tooltip</span></p>
       </Tooltip>
     </div>
   );
