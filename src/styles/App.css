@@ -1,1 +1,7 @@
-/*  */
+body{
+    display: flex;
+    flex-direction: column; /* Align elements vertically */
+    justify-content: center; /* Center elements vertically */
+    align-items: center; /* Center elements horizontally */
+  }
+  
