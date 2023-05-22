@@ -1,30 +1,20 @@
 import React from 'react';
 import Tooltip from './Tooltip';
-import "../styles/App.css"
+import  "../styles/App.css"
 
 
 const App = () => {
   return (
-    <div>
-      <div>
-
+    <div className='container'>
       <Tooltip text="This is a tooltip">
-        <h2>
-          <div className="tooltip">This is a tooltip
-          </div>
-        </h2>
+        <h2 className="tooltip">This is a tooltip</h2>
+      </Tooltip>
+      <div className='another'>
+           <Tooltip text="This is another tooltip">
+        <p className="tooltip">This is another tooltip</p>
       </Tooltip>
       </div>
-      <div>
-      <Tooltip text="This is another tooltip">
-        <p>
-          <div className="tooltip">
-            This is another tooltip
-          </div>
-        </p>
-      </Tooltip>
-      </div>
-      
+   
     </div>
   );
 };
