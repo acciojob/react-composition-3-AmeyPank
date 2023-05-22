@@ -5,7 +5,7 @@ const App = () => {
   return (
     <div className="app">
       <Tooltip text="This is a tooltip">
-        <h2>Hover ove me</h2>
+        <h2><span className="tooltip">Hover ove me</span></h2>
       </Tooltip>
 
       <Tooltip text="This is another tooltip">
