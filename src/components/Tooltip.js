@@ -12,9 +12,15 @@ const Tooltip = ({ text, children }) => {
   };
 
   return (
-    <div className="tooltip" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-      {children}
-      {showTooltip && <div className="tooltiptext">{text}</div>}
+    <div className="tooltip">
+      <span
+        className="tooltip-text"
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      >
+        {children}
+        {showTooltip && <span className="tooltiptext">{text}</span>}
+      </span>
     </div>
   );
 };
